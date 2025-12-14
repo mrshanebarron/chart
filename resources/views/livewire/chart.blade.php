@@ -1,18 +1,13 @@
 <div
+    wire:ignore
     x-data="{
         chart: null,
         init() {
-            this.chart = new Chart(this.$refs.canvas, {{ json_encode($this->getChartConfig()) }});
+            this.chart = new Chart(this.$refs.canvas, @js($this->getChartData()));
         }
     }"
-    wire:ignore
-    style="height: {{ $height }}px"
+    class="relative"
+    style="height: {{ $height }}"
 >
     <canvas x-ref="canvas"></canvas>
 </div>
-<script>
-    // Make sure Chart.js is loaded
-    if (typeof Chart === 'undefined') {
-        console.warn('Chart.js is required. Include it via CDN or npm.');
-    }
-</script>

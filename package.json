@@ -1,12 +1,11 @@
 {
-    "name": "@laraveldesign/chart",
+    "name": "@mrshanebarron/chart",
     "version": "1.0.0",
-    "description": "Chart component using Chart.js for Laravel",
-    "main": "resources/js/vue/index.js",
-    "module": "resources/js/vue/index.js",
-    "files": ["resources/js/vue"],
-    "keywords": ["laravel", "chart", "graph", "data", "livewire", "vue"],
-    "author": "Shane Barron <mrshanebarron@gmail.com>",
-    "license": "MIT",
-    "peerDependencies": {"vue": "^3.0.0"}
+    "description": "Charting component for Vue 3 with Chart.js",
+    "main": "resources/js/index.js",
+    "module": "resources/js/index.js",
+    "peerDependencies": {
+        "vue": "^3.0.0",
+        "chart.js": "^4.0.0"
+    }
 }

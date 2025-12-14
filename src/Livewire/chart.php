@@ -10,14 +10,14 @@ class Chart extends Component
     public array $labels = [];
     public array $datasets = [];
     public array $options = [];
-    public int $height = 300;
+    public string $height = '300px';
 
     public function mount(
         string $type = 'bar',
         array $labels = [],
         array $datasets = [],
         array $options = [],
-        int $height = 300
+        string $height = '300px'
     ): void {
         $this->type = $type;
         $this->labels = $labels;
@@ -26,7 +26,7 @@ class Chart extends Component
         $this->height = $height;
     }
 
-    public function getChartConfig(): array
+    public function getChartData(): array
     {
         return [
             'type' => $this->type,
