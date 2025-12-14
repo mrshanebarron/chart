@@ -9,8 +9,8 @@ class ChartServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if (class_exists(\Livewire\Livewire::class)) {
-            \Livewire\Livewire::component('ld-chart', Livewire\Chart::class);
+            \Livewire\Livewire::component('sb-chart', Livewire\Chart::class);
         }
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ld-chart');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sb-chart');
     }
 }

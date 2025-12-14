@@ -11,7 +11,7 @@ import { Chart as ChartJS, registerables } from 'chart.js';
 ChartJS.register(...registerables);
 
 export default {
-  name: 'LdChart',
+  name: 'SbChart',
   props: {
     type: { type: String, default: 'bar' },
     labels: { type: Array, default: () => [] },

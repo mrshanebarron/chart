@@ -43,6 +43,6 @@ class Chart extends Component
 
     public function render()
     {
-        return view('ld-chart::livewire.chart');
+        return view('sb-chart::livewire.chart');
     }
 }
