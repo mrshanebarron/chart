@@ -6,8 +6,7 @@
             this.chart = new Chart(this.$refs.canvas, @js($this->getChartData()));
         }
     }"
-    class="relative"
-    style="height: {{ $height }}"
+    style="position: relative; height: {{ $this->height }}"
 >
     <canvas x-ref="canvas"></canvas>
 </div>
